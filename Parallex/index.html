@@ -1,0 +1,138 @@
+<!--Written By divijish on 03/09/2017 -->
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>
+Divij's Website
+</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="javascript/script.js"></script>
+
+
+</head>
+<body onload = "myFunc()">
+
+	
+
+	<div class = "menu">
+	<ul>
+		<div class = "menu-border" onmouseout = "nodropdown(0)">
+			
+			<div class = "menu-tab" onmouseover = "dropdown(0)" > <a href = "#">Home</a>
+			
+			</div>
+			<div class = "options option11"><a href="">Essays</a></div>
+			<div class = "options option12"><a href = "">Comics</a></div>
+			<div class = "options option13"><a href = "">Games</a></div>
+			
+		
+		</div>
+		
+		
+		<div class = "menu-border">
+		<div class = "menu-tab"><a href = "#">About</a></div>
+		</div>
+		
+		<div class = "menu-border">
+		<div class = "menu-tab"><a href = "#">Options</a></div>
+		</div>
+		
+	</ul>
+
+	</div>
+
+	<div class = "pimg1">
+ 		<div class = "ptext">
+ 			<span class="border">
+ 				QuGuy
+ 			</span>	
+ 		</div>
+	</div>
+
+	<section class="section section-light" >
+		<h2>
+		Section one
+		</h2>
+		<p>
+		Manmohan Singh had his share of problems when he was to rejig cabinet committee on security after Shivraj Patil was sent for gubernatorial assignment. Finally family loyalist A K Antony had to be brought in from Kerala to take on the mantle. 
+		</p>
+	</section>
+
+	<div class = "pimg2">
+ 		<div class = "ptext">
+ 			<span class="border trans">
+ 				Image 2 text
+ 			</span>	
+ 		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2>
+		Section Two
+		</h2>
+		<p>
+		Manmohan Singh had his share of problems when he was to rejig cabinet committee on security after Shivraj Patil was sent for gubernatorial assignment. Finally family loyalist A K Antony had to be brought in from Kerala to take on the mantle. 
+		</p>
+	</section>
+
+	<div class = "pimg3">
+ 		<div class = "ptext">
+ 			<span class="border trans">
+ 				Image 3 text
+ 			</span>	
+ 		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2>
+		Section three
+		</h2>
+		<p>
+When the BJP won a massive victory in 2014, the defence ministry was first handed over to Arun Jaitley. He held the dual charge along with that of finance. Later Manohar Parrikar was drafted in from Goa. The first chance that he got, the IIT graduate decided to return to Panjim to lead a fragile coalition. The baton was again handed over to Jaitley till a replacement was found.
+
+Prime Ministers in the past have shown great care in choosing their defence ministers. Aspirants are gauged on broadly three parameters- probity, loyalty and political experience. 
+
+		</p>
+	</section>
+
+	<div class = "pimg1">
+ 		<div class = "ptext">
+ 			<span class="border">
+ 				QuGuy
+ 			</span>	
+ 		</div>
+	</div>
+
+
+
+</body>
+
+<script>
+
+var count = 3;
+function menuChange(){
+	
+	count++;
+
+	var sect1top = document.getElementsByTagName("body")[0].scrollTop;
+	
+	console.log(count +" sect1top="+sect1top);
+
+	if(sect1top>560){
+		document.getElementsByClassName("menu")[0].style.opacity = 1.0;
+	}else {
+		document.getElementsByClassName("menu")[0].style.opacity = 0.7;
+
+	}
+
+	
+//	document.getElementsByClassName("menu-tab")[0].addEventListener("click", , true);
+}
+</script>
+
+</html>

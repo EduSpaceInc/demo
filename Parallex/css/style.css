@@ -1,0 +1,163 @@
+/* 
+
+Written By divijish on 03/09/2017
+
+*/
+body, html{
+	height:100%;
+	margin: 0px;
+	font-size:16px;
+	font-family:"Lato", sans-serif;
+	font-weight: 400;
+	line-height:1.8em;
+	color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position:relative;
+	opacity: 0.7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.pimg1{
+	background-image:url('../images/riverstones.jpeg');
+	min-height:100%;
+	top: 0px;
+}
+
+.pimg2{
+	background-image:url('../images/forest.jpg');
+	min-height:400px;
+	
+}
+.pimg3{
+	background-image:url('../images/beach.jpeg');
+	min-height:400px;
+	
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color: #f2f2f2;
+	color: #666;
+}
+
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+	opacity:1.0;
+}
+
+.ptext{
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	color:#000000;
+	font-size:27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: black;
+	color: #ffffff;
+	opacity: 1.0;
+	padding: 15px;
+
+}
+
+.border:hover{
+	padding: 16px;
+}
+.ptext .border.trans{
+	background-color: transparent;
+}
+
+
+.menu {
+    background-color: #000000;
+    text-align: center;
+    width: 100%;    
+    height: 100px;
+   	display:inline-block;
+    position:fixed;
+    font-size:20px;
+    z-index: 99;
+    padding: 0px;
+    opacity: 0.7;
+}
+
+
+ .menu-tab{
+	
+	
+	background-color: white;
+	color: black;
+	display:inline-block;
+	opacity: 1.0;
+	//height: 60px;
+	padding: 15px;
+	position: relative;
+
+
+}
+
+.menu-tab:hover{
+
+	height: 60px;
+	background-color: white;
+	color: black;
+	display:inline-block;
+	opacity: 1.0;
+
+}
+
+.menu-border{
+	display:inline-block;
+	background-color: black;
+	padding: 0px;
+
+}
+
+.options{
+	text-align: center;
+	padding: 0px;
+	background-color: transparent;
+	color: black;
+	display:none;
+	opacity: 1.0;
+	top: 0px;
+	//height : 50px;
+	width: 84px;
+	position: absolute;
+	margin-top:20px;
+}
+
+li{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:black;
+}
+
+a:visited{
+	color:black;
+}
+
+@media(max-width: 568px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	}
+}
